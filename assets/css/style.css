@@ -1,0 +1,227 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight:inherit;
+  font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: inherit;
+  font-style: italic;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  scroll-behavior: smooth;
+  user-select: none;
+  background-color:var(--quantertary-color);
+}
+
+/* Colors */
+:root{
+  --primary-color:rgb(26, 18, 11);
+  --secondary-color:rgb(60, 42, 33);
+  --tertiary-color:rgb(213, 206, 163);
+  --quantertary-color:rgb(229, 229, 203);
+
+  --primary-contrast-color:	rgb(79,111,82);
+  --secondary-contrast-color:	rgb(115,144,114);
+  --tertiary-contrast-color:	rgb(134,167,137);
+  --quantertary-contrast-color:	rgb(210,227,200);
+}
+
+/* Elements */
+h1{
+  font-size: 10rem;
+  line-height: 1.1;
+  letter-spacing: -2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+.navbar{
+  background-color: var(--quantertary-color);
+}
+.navbar-brand{
+  position: relative;
+  left: 20px;
+}
+.nav-link{
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
+}
+.nav-link:hover{
+  color: var(--primary-contrast-color);
+}
+
+.navbar-button{
+  border: 3px solid var(--primary-contrast-color);
+  border-radius: 0px;
+  color: var(--primary-contrast-color);
+  background-color:transparent;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  padding: 4px;
+
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+.navbar-button:hover{
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+
+.fadeIn{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s 0s, opacity 0.1s 0.2s linear;
+}
+.fadeOut{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s 0s, opacity 0.1s 0.2s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero */
+.heroPic{
+  height: 70vh;
+  width: 60vw;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  background-image: url(/assets/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  z-index: 0;
+
+  filter: invert();
+}
+.heroTitle{
+  position: relative;
+
+  color: var(--primary-contrast-color);
+
+  text-align: center;
+
+  margin-left: 5vw;
+  margin-right:5vw;
+  margin-top: 13vh;
+
+  z-index: 1;
+}
+.colorInverter{
+  height: 70vh;
+  width: 60vw;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  z-index: 1;
+
+  background-color: white;
+
+  mix-blend-mode: difference;
+}
+
+.goDown{
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+
+  border-radius: 50%;
+
+  width: 90px;
+  height: 90px;
+  background-color: var(--primary-color);
+
+  background-image: url(/design/goDown.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+
+  transition: background-color 0.2s;
+}
+.goDown:hover{
+  background-color: var(--secondary-color);
+  transition: background-color 0.2s;
+}
+.goDown:active{
+  background-color:var(--tertiary-color);
+  transition: background-color 0.2s;
+}
+
+@media screen and (max-width:760px){
+  .heroTitle{
+    font-size: 19vw;
+    line-height: 16vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+}
+@media screen and (max-width:700px){
+  .goDown{
+    right: 3vw;
+  }
+}
+@media screen and (max-width:620px) {
+  .goDown{
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .heroTitle{
+    margin-top: 15vh;
+  }
+  .heroPic{
+    width: 85vw;
+  }
+  .colorInverter{
+    width: 85vw;
+  }
+}
