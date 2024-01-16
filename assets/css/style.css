@@ -32,11 +32,40 @@ body{
   --quantertary-contrast-color:	rgb(210,227,200);
 }
 
+
+
+
 /* Elements */
 h1{
   font-size: 10rem;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
   line-height: 1.1;
   letter-spacing: -2%;
+}
+h2{
+  font-size: 8rem;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1.5%;
+}
+h3{
+  font-size: 6rem;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1%;
+}
+p{
+  font-size: 2rem;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  font-weight:light;
+}
+line{
+  color: var(--primary-contrast-color);
 }
 
 
@@ -116,7 +145,7 @@ h1{
 
 
 /* Hero */
-.heroPic{
+.heroPicContainer{
   height: 70vh;
   width: 60vw;
 
@@ -128,19 +157,20 @@ h1{
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 
-  background-image: url(/assets/background.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
   z-index: 0;
-
+}
+.heroPic{
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
   filter: invert();
 }
 .heroTitle{
   position: relative;
 
-  color: var(--primary-contrast-color);
+  color: var(--primary-color);
 
   text-align: center;
 
@@ -178,7 +208,7 @@ h1{
 
   width: 90px;
   height: 90px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-contrast-color);
 
   background-image: url(/design/goDown.svg);
   background-position: center;
@@ -188,20 +218,25 @@ h1{
   transition: background-color 0.2s;
 }
 .goDown:hover{
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-contrast-color);
   transition: background-color 0.2s;
 }
 .goDown:active{
-  background-color:var(--tertiary-color);
+  background-color:var(--tertiary-contrast-color);
   transition: background-color 0.2s;
 }
 
-@media screen and (max-width:760px){
+
+@media screen and (max-width:1200px){
   .heroTitle{
-    font-size: 19vw;
-    line-height: 16vw;
-    margin-left: 0vw;
-    margin-right: 0vw;
+    font-size: 9rem;
+  }
+}
+@media screen and (max-width:995px){
+  .heroTitle{
+    font-size: 8rem;
+    margin-left: 4vw;
+    margin-right: 4vw;
   }
 }
 @media screen and (max-width:700px){
@@ -215,13 +250,79 @@ h1{
     transform: translateX(-50%);
     z-index: 2;
   }
-  .heroTitle{
-    margin-top: 15vh;
-  }
   .heroPic{
     width: 85vw;
   }
   .colorInverter{
     width: 85vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* About */
+#about{
+  margin-top: 100vh;
+}
+.aboutRow{
+  height: 100vh;
+}
+
+.aboutText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.aboutTitle{
+  text-align: center;
+}
+.aboutSubtitle{
+  text-align: center;
+}
+.aboutImage{
+  width: 100% ;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 991.8px) {
+  .aboutRow{
+    height: fit-content; 
+  }
+  .aboutText{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+  }
+  .aboutImage{
+    width: 700px;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 781px) {
+  .aboutImage{
+    width: 85%;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }
