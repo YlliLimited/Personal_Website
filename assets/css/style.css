@@ -57,8 +57,30 @@ h3{
   line-height: 1.15;
   letter-spacing: -1%;
 }
+h4{
+  font-size: 4rem;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -1%;
+}
+h5{
+  font-size: 3rem;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.8%;
+}
+
 p{
   font-size: 2rem;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  font-weight:light;
+}
+.p2{
+  font-size: 1.5rem;
   line-height: 1.4;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.6px;
@@ -145,43 +167,43 @@ line{
 
 
 /* Hero */
-.heroPicContainer{
-  height: 70vh;
-  width: 60vw;
-
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-
-  z-index: 0;
-
-  box-shadow: 10px 10px 0px var(--tertiary-color)
+.heroContainer{
+  position: relative;
+  height: 110vh;
+  width: 100%;
 }
 .heroPic{
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
+  position: absolute;
+  width: 60vw;
+  height: 70vh;
   object-fit: cover;
   object-position: center;
+
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  z-index: -1;
+
+  box-shadow: 10px 10px 0px var();
+
   filter: invert();
 }
+
 .heroTitle{
-  position: relative;
+  position: absolute;
 
   color: var(--primary-color);
 
   text-align: center;
 
-  margin-left: 5vw;
-  margin-right:5vw;
+  margin-left: 8vw;
+  margin-right:8vw;
   margin-top: 13vh;
 
   z-index: 1;
 }
+
 .colorInverter{
   height: 70vh;
   width: 60vw;
@@ -190,9 +212,6 @@ line{
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
 
   z-index: 1;
 
@@ -203,14 +222,14 @@ line{
 
 .goDown{
   position: absolute;
-  bottom: 25px;
+  bottom: calc(25px + 10vh);
   right: 25px;
 
   border-radius: 50%;
 
   width: 90px;
   height: 90px;
-  background-color: var(--primary-contrast-color);
+  background-color: var(--primary-color);
 
   background-image: url(/design/goDown.svg);
   background-position: center;
@@ -220,31 +239,12 @@ line{
   transition: background-color 0.2s;
 }
 .goDown:hover{
-  background-color: var(--secondary-contrast-color);
+  background-color: var(--secondary-color);
   transition: background-color 0.2s;
 }
 .goDown:active{
-  background-color:var(--tertiary-contrast-color);
+  background-color:var(--tertiary-color);
   transition: background-color 0.2s;
-}
-
-
-@media screen and (max-width:1200px){
-  .heroTitle{
-    font-size: 9rem;
-  }
-}
-@media screen and (max-width:995px){
-  .heroTitle{
-    font-size: 8rem;
-    margin-left: 4vw;
-    margin-right: 4vw;
-  }
-}
-@media screen and (max-width:700px){
-  .goDown{
-    right: 3vw;
-  }
 }
 @media screen and (max-width:620px) {
   .goDown{
@@ -253,12 +253,20 @@ line{
     z-index: 2;
   }
   .heroPic{
-    width: 85vw;
+    width: 90vw;
   }
   .colorInverter{
-    width: 85vw;
+    width: 90vw;
   }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -266,17 +274,22 @@ line{
 
 
 /* Vertical Lines */
-.verticalLines{
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
 .verticalLine{
-  position: absolute;
-  height: 300px;
+  height: 40vh;
+  width: 0px;
   border: 1px solid var(--primary-color);
-  margin-top: 50vh;
 }
+.linesRow{
+  margin-top: 150px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+
 
 
 
@@ -288,7 +301,7 @@ line{
 
 /* About */
 #about{
-  margin-top: 100vh;
+  margin-top: 150px;
   background-color: var(--secondary-contrast-color);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -348,5 +361,66 @@ line{
     height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Services */
+#services{
+  margin-top: 150px;
+  position: relative;
+}
+.servicesTitle{
+  color: var(--primary-color);
+  text-align: center;
+}
+.servicesText{
+  color: rgb(26, 18, 11,0.9);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Works */
+#works{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+.worksImage{
+  width: 1vw;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+
+  animation: grow linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+@keyframes grow{
+  from{
+    width: 1vw;
+  }
+  to{
+    width: 100%;
   }
 }
