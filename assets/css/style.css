@@ -131,6 +131,8 @@ line{
 
   padding: 4px;
 
+  align-self: flex-start;
+
   transition: background-color 0.15s, border-color 0.15s, color 0.15s;
 }
 .navbar-button:hover{
@@ -138,18 +140,6 @@ line{
   border-color: var(--secondary-color);
   color: var(--quantertary-color);
   transition: background-color 0.15s, border-color 0.15s, color 0.15s;
-}
-
-
-.fadeIn{
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0.3s 0s, opacity 0.1s 0.2s linear;
-}
-.fadeOut{
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.3s 0s, opacity 0.1s 0.2s linear;
 }
 
 
