@@ -66,6 +66,9 @@ h4{
 .nav-link:hover{
   color: var(--primary-contrast-color);
 }
+.navbar-toggler{
+  border: none;
+}
 
 
 /* Form */

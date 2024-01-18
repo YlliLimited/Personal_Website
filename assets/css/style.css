@@ -329,6 +329,9 @@ line{
   -moz-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
   -webkit-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
 }
+.navbar-toggler{
+  border: none;
+}
 
 
 
