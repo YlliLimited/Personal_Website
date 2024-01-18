@@ -69,6 +69,13 @@ h4{
 .navbar-toggler{
   border: none;
 }
+@media screen and (max-width: 991.98px){
+  .nav-link{
+    text-align: center;
+  }
+}
+
+
 
 
 /* Form */
@@ -114,7 +121,6 @@ label{
   padding-right: 40px;
   border-radius: 5px;
   color: var(--primary-contrast-color);
-  padding-bottom: 5px;
 
   transition: background-color 0.2s;
   -o-transition: background-color 0.2s;
