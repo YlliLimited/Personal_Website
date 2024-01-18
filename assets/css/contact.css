@@ -77,38 +77,6 @@ h4{
 
   flex-direction: column;
 }
-@media screen and (max-height:705px) {
-  #form{
-    padding-top: 100px;
-  }
-}
-@media screen and (max-height:620px) {
-  #form{
-    padding-top: 150px;
-  }
-}
-@media screen and (max-height:560px) {
-  #form{
-    padding-top: 200px;
-  }
-}
-@media screen and (max-height:510px) {
-  #form{
-    padding-top: 250px;
-  }
-}
-@media screen and (max-width:767.98px) {
-  #form{
-    padding-top: 150px;
-  }
-}
-@media screen and (max-width:524.98px) {
-  #form{
-    padding-top: 300px;
-    min-height: fit-content;
-    position: relative;
-  }
-}
 
 
 .formTitle{
