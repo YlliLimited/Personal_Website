@@ -647,6 +647,7 @@ line{
 #services{
   margin-top: 150px;
   position: relative;
+  overflow-x: hidden;
 }
 .servicesTitle{
   color: var(--primary-color);
@@ -871,7 +872,7 @@ line{
 
 
 
-
+/* Responsivity */
 @media screen and (max-width:374.98px) {
   .circlesHero{
     scale: 0.8;
@@ -886,4 +887,27 @@ line{
   .circlesFooter{
     left: -100px;
   }
+}
+
+
+
+/* Scroll Animations */
+.hiddenLeft{
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.showLeft{
+  transform: translateX(0%);
+  opacity: 1;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
+.hiddenRight{
+  transform: translateX(100%);
+  opacity: 0;
+}
+.showRight{
+  transform: translateX(0%);
+  opacity: 1;
+  transition: transform 0.8s, opacity 0.8s;
 }
