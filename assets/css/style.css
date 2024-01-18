@@ -332,7 +332,11 @@ line{
   .navbar-button{
     align-self: center;
   }
+  .navbar{
+    padding-bottom: 15px;
+  }
 }
+
 
 
 

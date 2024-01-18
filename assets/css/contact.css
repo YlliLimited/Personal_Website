@@ -73,6 +73,9 @@ h4{
   .nav-link{
     text-align: center;
   }
+  .navbar{
+    padding-bottom: 15px;
+  }
 }
 
 
