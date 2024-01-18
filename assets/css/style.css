@@ -327,11 +327,27 @@ line{
 }
 .navbar-toggler[aria-expanded=false] .navbarArrow {
   transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  
   transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
 }
 .navbar-toggler[aria-expanded=true] .navbarArrow {
   transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+
   transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
 }
 
 @media screen and (max-width: 991.98px){
