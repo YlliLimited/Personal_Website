@@ -342,7 +342,7 @@ line{
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
-  -webkit-transform: rotate(0deg);
+  -webkit-transform: rotate(180deg);
 
   transition: transform 0.2s;
   -o-transition: transform 0.2s;
