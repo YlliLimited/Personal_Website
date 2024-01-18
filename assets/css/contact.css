@@ -40,34 +40,13 @@ body{
 
 
 /* Elements */
-h3{
-  font-size: 6rem;
-  font-family: "Baskervville", serif;
-  font-weight: 400;
-  line-height: 1.15;
-  letter-spacing: -1%;
-}
+
 h4{
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: "Baskervville", serif;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -1%;
-}
-
-p{
-  font-size: 2rem;
-  line-height: 1.4;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.6px;
-  font-weight:light;
-}
-.p2{
-  font-size: 1.5rem;
-  line-height: 1.4;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.6px;
-  font-weight:light;
 }
 
 
@@ -98,6 +77,38 @@ p{
 
   flex-direction: column;
 }
+@media screen and (max-height:705px) {
+  #form{
+    padding-top: 100px;
+  }
+}
+@media screen and (max-height:620px) {
+  #form{
+    padding-top: 150px;
+  }
+}
+@media screen and (max-height:560px) {
+  #form{
+    padding-top: 200px;
+  }
+}
+@media screen and (max-height:510px) {
+  #form{
+    padding-top: 250px;
+  }
+}
+@media screen and (max-width:767.98px) {
+  #form{
+    padding-top: 150px;
+  }
+}
+@media screen and (max-width:524.98px) {
+  #form{
+    padding-top: 300px;
+  }
+}
+
+
 .formTitle{
   text-align: center;
   color: var(--primary-color);
@@ -130,10 +141,26 @@ label{
   padding-right: 40px;
   border-radius: 5px;
   color: var(--primary-contrast-color);
-  transition: background-color 0.2s;
   padding-bottom: 5px;
+
+  transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
 }
 .formSubmit:hover{
   background-color: var(--primary-contrast-color);
   color: var(--quantertary-color);
+}
+
+.circlesContact{
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  z-index: -10;
+}
+@media screen and (max-width:400px) {
+  .circlesContact{
+    scale: 0.9;
+  }
 }
