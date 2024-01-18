@@ -69,6 +69,14 @@ h4{
 .navbar-toggler{
   border: none;
 }
+.navbar-toggler[aria-expanded=false] .navbarArrow {
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+}
+.navbar-toggler[aria-expanded=true] .navbarArrow {
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+}
 @media screen and (max-width: 991.98px){
   .nav-link{
     text-align: center;
