@@ -105,6 +105,8 @@ h4{
 @media screen and (max-width:524.98px) {
   #form{
     padding-top: 300px;
+    min-height: fit-content;
+    position: relative;
   }
 }
 
