@@ -445,7 +445,7 @@ line{
   height: 90px;
   background-color: var(--primary-color);
 
-  background-image: url(/design/goDown.svg);
+  background-image: url(/assets/design/goDown.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
