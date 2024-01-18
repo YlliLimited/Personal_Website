@@ -11,24 +11,17 @@
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
+        
+
+        <!-- On load Logo -->
+        <div class="container startupContainer">
+            <img src="/design/myLogo.png" alt="Startup logo" loading="lazy" id="startupLogo">
+        </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Navbar -->
+        <div class="everything">
+            <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="index.html#top">
                 <img
@@ -88,15 +81,15 @@
 
         <!-- Hero -->
         <div class="heroContainer">
-            <h1 class="heroTitle">Lorem ipsum dolor sit amet.</h1>
+            <h1 class="heroTitle">Creativity and Elegance</h1>
             <div class="heroPicContainer">
                 <img src="/design/hero.jpg" alt="heroPic" class="heroPic" loading="lazy">
             </div>
             <a href="#about" class="goDown"></a>
             <div class="colorInverter"></div>
 
-            <div class="circles">
-                <svg height="600" width="370" style="position: absolute; z-index:-5; top:10vh;">
+            <div class="circlesHero">
+                <svg height="600" width="370">
                     <circle cx="100" cy="100" r="35" fill="rgb(134,167,137,0.5)" />
                     <circle cx="200" cy="100" r="35" fill="rgb(134,167,137,0.5)" />
                     <circle cx="300" cy="100" r="35" fill="rgb(134,167,137,0.5)" />
@@ -130,6 +123,10 @@
 
 
 
+
+
+
+
         <!-- About -->
         <section id="about">
                <div class="row aboutRow mx-0">
@@ -158,6 +155,14 @@
         </section>
 
 
+    </div>
+
+
+
+
+
+
+
 
 
         <!-- Vertical Lines -->
@@ -174,7 +179,7 @@
             <div class="row mx-0 px-3">
 
                 <div class="circles">
-                    <svg height="1100" width="375" style="position: absolute; z-index:-5; top:10vh; left:30vw;">
+                    <svg height="1100" width="375" class="circlesServices">
                         <circle cx="100" cy="100" r="35" fill="rgb(134,167,137,0.55)" />
                         <circle cx="300" cy="100" r="35" fill="rgb(134,167,137,0.55)" />
                         <circle cx="100" cy="200" r="35" fill="rgb(134,167,137,0.55)" />
@@ -212,41 +217,41 @@
 
 
                 <div class="row mx-0 w-100 my-5">
-                  <div class="col-lg-6 p-5 d-flex justify-content-center flex-column" style="background-color: rgb(115,144,114);">
-                    <h5 class="servicesTitle"><line>-</line> Website Developement <line>-</line></h5>
+                  <div class="col-xl-6 p-5 d-flex justify-content-center flex-column" style="background-color: rgb(115,144,114);">
+                    <h5 class="servicesTitle"><line class="servicesLine">-</line>Website Developement <line class="servicesLine">-</line></h5>
                     <div class="servicesText p2">Your company doesn't have a website? That's no problem, because I offer full website developement services.</div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6">
                 </div>
                 </div>
 
 
                 <div class="row mx-0 w-100 my-3">
-                    <div class="col-lg-5">
+                    <div class="col-xl-5">
 
                     </div>
-                <div class="col-lg-7 p-5 d-flex justify-content-center flex-column" style="background-color:rgb(213, 206, 163);">
-                    <h5 class="servicesTitle"><line>-</line> Website Maintenance <line>-</line></h5>
+                <div class="col-xl-7 p-5 d-flex justify-content-center flex-column" style="background-color:rgb(213, 206, 163);">
+                    <h5 class="servicesTitle"><line class="servicesLine">-</line> Website Maintenance <line class="servicesLine">-</line></h5>
                     <div class="servicesText p2">You already have a website, but you don't have someone to manage it? You're in the right hands for just this case.</div>
                 </div>
                 </div>
 
 
                 <div class="row mx-0 w-100">
-                   <div class="col-lg-5 p-5 d-flex justify-content-center flex-column" style="background-color: rgb(210,227,200);;">
-                    <h5 class="servicesTitle"><line>-</line> Logo Design <line>-</line></h5>
+                   <div class="col-xl-5 p-5 d-flex justify-content-center flex-column" style="background-color: rgb(210,227,200);;">
+                    <h5 class="servicesTitle"><line class="servicesLine">-</line> Logo Design <line class="servicesLine">-</line></h5>
                     <div class="servicesText p2">The logo is one of the most important aspects of companies, so why not level up your company's image?</div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-xl-7">
                 </div>
                 </div>
 
 
                 <div class="row mx-0 w-100  my-4">
-                   <div class="col-lg-6">
+                   <div class="col-xl-6">
                    </div>
-                <div class="col-lg-6 p-5 d-flex justify-content-center flex-column" style="background-color: rgb(134,167,137);">
-                    <h5 class="servicesTitle"><line>-</line> Website Redesigning <line>-</line></h5>
+                <div class="col-xl-6 p-5 d-flex justify-content-center flex-column" style="background-color: rgb(134,167,137);">
+                    <h5 class="servicesTitle"><line class="servicesLine">-</line> Website Redesigning <line class="servicesLine">-</line></h5>
                     <div class="servicesText p2">You might feel like your website looks a little outdated and complicated? This is just the time for a full website redesign.</div>
                 </div>
                 </div>
@@ -335,8 +340,8 @@
                         <a href="" class="p2 footer-link text-center"><line>- </line>Facebook</a>
             </div>
             </div> 
-            <div class="circles">
-                <svg height="337" width="337" style="position: absolute; top:-100px; left:-30px;">
+            <div class="circlesFooter">
+                <svg height="337" width="337">
                     <circle cx="100" cy="100" r="35" fill="rgb(134,167,137,0.5)" />
                     <circle cx="200" cy="100" r="35" fill="rgb(134,167,137,0.5)" />
                     <circle cx="300" cy="100" r="35" fill="rgb(134,167,137,0.5)" />
@@ -348,8 +353,6 @@
                     <circle cx="300" cy="300" r="35" fill="rgb(134,167,137,0.1)" />
                 </svg>   
         </section>
-
-
 
 
 
