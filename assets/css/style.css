@@ -314,20 +314,13 @@ line{
 
   align-self: flex-start;
 
-  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
-  -o-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
-  -moz-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
-  -webkit-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+  transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
 }
 .navbar-button:hover{
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
-  color: var(--quantertary-color);
-
-  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
-  -o-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
-  -moz-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
-  -webkit-transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+  background-color: rgb(134,167,137,0.3);
 }
 .navbar-toggler{
   border: none;
@@ -467,17 +460,6 @@ line{
 }
 .goDown:hover{
   background-color: var(--secondary-color);
-  transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
-  -moz-transition: background-color 0.2s;
-  -webkit-transition: background-color 0.2s;
-}
-.goDown:active{
-  background-color:var(--tertiary-color);
-  transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
-  -moz-transition: background-color 0.2s;
-  -webkit-transition: background-color 0.2s;
 }
 @media screen and (max-width: 924.98px) {
   .heroTitle{
@@ -867,15 +849,13 @@ line{
   margin-top: 5px;
   z-index: 5;
 
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-  -o-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-  -moz-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-  -webkit-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
 }
 .footerContact:hover{
-  color: var(--quantertary-color);
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  background-color: rgb(134,167,137,0.3);
 }
 .circlesFooter{
   position: absolute;

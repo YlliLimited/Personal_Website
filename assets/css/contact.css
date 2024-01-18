@@ -114,12 +114,11 @@ label{
   color: var(--primary-color);
 }
 .formSubmit{
-  background-color: var(--quantertary-contrast-color);
+  background-color: transparent;
   border: 2.2px solid var(--primary-contrast-color);
   font-size: 1.4rem;
   padding-left: 40px;
   padding-right: 40px;
-  border-radius: 5px;
   color: var(--primary-contrast-color);
 
   transition: background-color 0.2s;
