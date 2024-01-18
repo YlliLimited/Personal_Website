@@ -734,6 +734,8 @@ line{
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
 
+  filter: brightness(0.3);
+
   z-index: -10;
 }
 .worksTitle{
